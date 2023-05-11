@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+}
+
+body {
+    background-color: rgb(83, 83, 83);
+}
+
+.splide__slide img {
+    height: 100%;
+    width: 100%;
+}
+
+video {
+    min-width: 100%;
+}
+
+.slide2_text1,
+.slide1_text1 {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    color: aliceblue;
+    font-size: 40px;
+    transition: 1s;
+    opacity: 1;
+}
+
+.slide2_text1 {
+    top: 30px;
+}
+
+.slide2_text2 {
+    position: absolute;
+    text-align: right;
+    opacity: 0;
+    bottom: 30px;
+    right: 20px;
+    font-size: 26px;
+    color: aliceblue;
+}
+
+.slide2 img {
+    filter: brightness(0.7);
+}
+
+.is-visible .slide2_text1 {
+    opacity: 1;
+    animation-name: slide-in-from-top;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+
+.is-visible .slide2_text2 {
+    opacity: 1;
+    animation-name: slide-in-from-bottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.slide3 img {
+    filter: brightness(0.7);
+}
+
+.slide3_text1 {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    top: 150px;
+    right: 20px;
+    font-size: 26px;
+    color: aliceblue;
+    transition: 1s;
+}
+
+.is-visible .slide3_text1 {
+    opacity: 1;
+    animation-name: slide-in-from-top;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.slide4 img {
+    filter: brightness(0.7);
+}
+
+.slide4_text1 {
+    text-align: center;
+    position: absolute;
+    bottom: 130px;
+    color: aliceblue;
+    font-size: 40px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.is-visible .slide4_text1 {
+    opacity: 1;
+    animation-name: slide-in-from-bottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.slide5_text1 {
+    text-align: center;
+    position: absolute;
+    bottom: 300px;
+    color: aliceblue;
+    font-size: 40px;
+    transition: 1s;
+    opacity: 0;
+}
+
+.is-visible .slide5_text1 {
+    opacity: 1;
+    animation-name: slide-in-from-bottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.splide__slide {
+    width: 100%;
+}
+
+.popup {}
+
+
+
+@keyframes slide-in-from-top {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-in-from-bottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
